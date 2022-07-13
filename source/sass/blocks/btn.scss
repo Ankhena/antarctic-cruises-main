@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  margin: 0;
+  padding: 10px 20px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $color-tangaroa;
+
+  text-align: center;
+
+  background-color: $color-alice-blue;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
